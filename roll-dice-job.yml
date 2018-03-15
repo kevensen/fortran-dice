@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: dice
-        image: dice
-        command: ["6",  "2"]
+        image: docker-registry.default.svc:5000/dice/dice
+        command: ["/opt/dice", "2",  "6"]
       restartPolicy: Never
   backoffLimit: 4
